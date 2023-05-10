@@ -59,47 +59,15 @@ int main()
     return 0;}
 
 /* Output
-No. of states : 3
-No. of transitions : 2
-state name : A
-path : 0
-Enter end state from state A travelling through path 0 : 
-B
-path : 1
-Enter end state from state A travelling through path 1 : 
-C
-state name : B
-path : 1
-Enter end state from state B travelling through path 1 : 
-B C
-path : 0
-Enter end state from state B travelling through path 0 : 
-C
-state name : C
-path : 0
-Enter end state from state C travelling through path 0 : 
 
-path : 1
-Enter end state from state C travelling through path 1 : 
+Enter the Parent Non-Terminal : E
+Enter the number of productions : 2
+Enter Production 1 : E+T
+Enter Production 2 : T
+Production Rule : E->E+T|T
+Production 1 has left recursion.
+Production 2 does not have left recursion.
+E->TE'|
+E'->+TE'|#
 
-Enter final state of NFA : 
-C
-Printing NFA table :- 
-0       1
-A  [B]     [C]
-B  [C]  [B, C]
-C   []      []
-DFA :- 
-
-{'A': {'0': 'B', '1': 'C'}, 'B': {'0': 'C', '1': 'BC'}, 'C': {'0': '', '1': ''}, 'BC': {'0': 'C', '1': 'BC'}, '': {}}
-
-Printing DFA table :- 
-0    1
-A     B    C
-B     C   BC
-C           
-BC    C   BC
-    NaN  NaN
-
-Final states of the DFA are :  ['C', 'BC']
 */
